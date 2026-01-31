@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给我最爱的夏玲玲宝宝的新年祝福 ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border: 3px solid #ff6b8b;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* 顶部装饰 */
+        .header-decoration {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #ff6b8b, #ff8e53, #ff6b8b);
+        }
+        
+        .title {
+            color: #ff6b8b;
+            font-size: 2.8em;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b8b, #ff8e53);
+            border-radius: 2px;
+        }
+        
+        .love-icon {
+            font-size: 4em;
+            margin: 20px 0;
+            animation: heartbeat 1.2s infinite;
+            color: #ff6b8b;
+            cursor: pointer;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .message-box {
+            background: linear-gradient(120deg, #fff5f7, #fff);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            border-left: 5px solid #ff6b8b;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(255, 107, 139, 0.1);
+        }
+        
+        .message {
+            font-size: 1.4em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .highlight {
+            color: #ff6b8b;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .signature {
+            text-align: right;
+            font-size: 1.3em;
+            color: #ff6b8b;
+            margin-top: 30px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        
+        .secret-message {
+            background: #fff9fb;
+            border: 2px dashed #ff6b8b;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 25px;
+            display: none;
+            animation: fadeIn 0.8s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        /* 爱心雨特效 */
+        .heart-rain {
+            position: absolute;
+            top: -20px;
+            font-size: 20px;
+            color: #ff6b8b;
+            opacity: 0.3;
+            animation: fall linear infinite;
+        }
+        
+        @keyframes fall {
+            to { transform: translateY(100vh); }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            .title {
+                font-size: 2.2em;
+            }
+            .message {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 爱心雨 -->
+    <div class="heart-rain" style="left: 10%; animation-duration: 5s;">❤️</div>
+    <div class="heart-rain" style="left: 20%; animation-duration: 6s; animation-delay: 1s;">💖</div>
+    <div class="heart-rain" style="left: 80%; animation-duration: 7s; animation-delay: 2s;">💕</div>
+    
+    <div class="container">
+        <div class="header-decoration"></div>
+        
+        <h1 class="title">
+            致我最爱的 <span class="highlight">玲玲</span>
+        </h1>
+        
+        <div class="love-icon" onclick="showSecret()">
+            ❤️
+        </div>
+        
+        <div class="message-box">
+            <p class="message">
+                亲爱的 <span class="highlight">玲玲</span>，<br><br>
+                遇见你的 <span class="highlight">2025</span> 年，是我生命中最美的奇迹。<br>
+                那些笑容和拥抱，是我最珍贵的宝藏。<br><br>
+                新的一年，我想要：<br>
+                ✓ 陪你吃很多很多顿饭<br>
+                ✓ 和你去很多很多个地方<br>
+                ✓ 在每个夜晚互道晚安<br>
+                ✓ 在每个清晨第一个想你<br><br>
+                愿我们的 <span class="highlight">2025</span>，<br>
+                比所有的甜更甜，比所有的暖更暖。
+            </p>
+        </div>
+        
+        <div id="secretMessage" class="secret-message">
+            <p style="color: #ff6b8b; font-size: 1.2em; font-weight: bold;">
+                💌 彩蛋时间 💌<br><br>
+                这是我的新年承诺：<br>
+                <span class="highlight">永远爱你My Honey</span>
+            </p>
+        </div>
+        
+        <div class="signature">
+            永远爱你的 <span class="highlight">宝宝</span><br>
+            <span style="font-size: 0.8em;">2026</span>
+        </div>
+        
+        <div class="footer">
+            专属定制 · 仅此一份 · 新年快乐 🎉
+        </div>
+    </div>
+
+    <script>
+        // 显示隐藏的彩蛋信息
+        function showSecret() {
+            const secret = document.getElementById('secretMessage');
+            const isHidden = secret.style.display === 'none' || secret.style.display === '';
+            
+            if (isHidden) {
+                secret.style.display = 'block';
+                // 可以在这里添加音效（需要音效文件）
+                // new Audio('heartbeat.mp3').play();
+                // 创建更多爱心
+                for(let i = 0; i < 15; i++) {
+                    createHeart();
+                }
+            }
+        }
+        
+        // 创建飘落的爱心
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '❤️';
+            heart.className = 'heart-rain';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+            heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
+            heart.style.opacity = Math.random() * 0.4 + 0.2;
+            
+            document.body.appendChild(heart);
+            
+            // 动画结束后移除
+            setTimeout(() => {
+                heart.remove();
+            }, 8000);
+        }
+        
+        // 页面加载时先创建一些爱心
+        window.onload = function() {
+            for(let i = 0; i < 8; i++) {
+                createHeart();
+            }
+        }
+    </script>
+</body>
+</html>
