@@ -34,7 +34,6 @@
             overflow: hidden;
         }
         
-        /* 顶部装饰 */
         .header-decoration {
             position: absolute;
             top: 0;
@@ -131,7 +130,6 @@
             font-size: 0.9em;
         }
         
-        /* 爱心雨特效 */
         .heart-rain {
             position: absolute;
             top: -20px;
@@ -145,7 +143,6 @@
             to { transform: translateY(100vh); }
         }
         
-        /* 响应式设计 */
         @media (max-width: 600px) {
             .container {
                 padding: 25px;
@@ -160,7 +157,6 @@
     </style>
 </head>
 <body>
-    <!-- 爱心雨 -->
     <div class="heart-rain" style="left: 10%; animation-duration: 5s;">❤️</div>
     <div class="heart-rain" style="left: 20%; animation-duration: 6s; animation-delay: 1s;">💖</div>
     <div class="heart-rain" style="left: 80%; animation-duration: 7s; animation-delay: 2s;">💕</div>
@@ -179,14 +175,13 @@
         <div class="message-box">
             <p class="message">
                 亲爱的 <span class="highlight">玲玲</span>，<br><br>
-                遇见你的 <span class="highlight">2025</span> 年，是我生命中最美的奇迹。<br>
-                那些笑容和拥抱，是我最珍贵的宝藏。<br><br>
+                遇见你的 <span class="highlight">2025</span> 年，是我生命中最美的奇迹，是我最珍贵的宝藏。<br>
                 新的一年，我想要：<br>
-                ✓ 陪你吃很多很多顿饭<br>
+                ✓ 陪你吃很多很多好吃的<br>
                 ✓ 和你去很多很多个地方<br>
                 ✓ 在每个夜晚互道晚安<br>
                 ✓ 在每个清晨第一个想你<br><br>
-                愿我们的 <span class="highlight">2025</span>，<br>
+                愿我们的 <span class="highlight">2026</span>，<br>
                 比所有的甜更甜，比所有的暖更暖。
             </p>
         </div>
@@ -195,13 +190,15 @@
             <p style="color: #ff6b8b; font-size: 1.2em; font-weight: bold;">
                 💌 彩蛋时间 💌<br><br>
                 这是我的新年承诺：<br>
-                <span class="highlight">永远爱你My Honey</span>
+                <span class="highlight">永远爱你 My Honey</span><br><br>
+                还有一个小秘密：<br>
+                <span class="highlight">你是我的全世界</span>
             </p>
         </div>
         
         <div class="signature">
-            永远爱你的 <span class="highlight">宝宝</span><br>
-            <span style="font-size: 0.8em;">2026</span>
+            永远爱你的 <span class="highlight">梁玖壑宝宝</span><br>
+            <span style="font-size: 0.8em;">2026年</span>
         </div>
         
         <div class="footer">
@@ -210,15 +207,13 @@
     </div>
 
     <script>
-        // 显示隐藏的彩蛋信息
         function showSecret() {
             const secret = document.getElementById('secretMessage');
             const isHidden = secret.style.display === 'none' || secret.style.display === '';
             
             if (isHidden) {
                 secret.style.display = 'block';
-                // 可以在这里添加音效（需要音效文件）
-                // new Audio('heartbeat.mp3').play();
+                
                 // 创建更多爱心
                 for(let i = 0; i < 15; i++) {
                     createHeart();
@@ -226,7 +221,6 @@
             }
         }
         
-        // 创建飘落的爱心
         function createHeart() {
             const heart = document.createElement('div');
             heart.innerHTML = '❤️';
@@ -238,13 +232,11 @@
             
             document.body.appendChild(heart);
             
-            // 动画结束后移除
             setTimeout(() => {
                 heart.remove();
             }, 8000);
         }
         
-        // 页面加载时先创建一些爱心
         window.onload = function() {
             for(let i = 0; i < 8; i++) {
                 createHeart();
